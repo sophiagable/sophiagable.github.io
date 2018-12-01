@@ -5,17 +5,17 @@
   
 
   
-  <title>sophiagable</title>
+  <title>Sophia&#39;s Coding Life</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="website">
-<meta property="og:title" content="sophiagable">
+<meta property="og:title" content="Sophia&#39;s Coding Life">
 <meta property="og:url" content="http://sophiagable.github.io/index.html">
-<meta property="og:site_name" content="sophiagable">
+<meta property="og:site_name" content="Sophia&#39;s Coding Life">
 <meta property="og:locale" content="default">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="sophiagable">
+<meta name="twitter:title" content="Sophia&#39;s Coding Life">
   
-    <link rel="alternate" href="/atom.xml" title="sophiagable" type="application/atom+xml">
+    <link rel="alternate" href="/atom.xml" title="Sophia&#39;s Coding Life" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
@@ -34,8 +34,12 @@
   <div id="header-outer" class="outer">
     <div id="header-title" class="inner">
       <h1 id="logo-wrap">
-        <a href="/" id="logo">sophiagable</a>
+        <a href="/" id="logo">Sophia&#39;s Coding Life</a>
       </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">Record My Coding Life</a>
+        </h2>
       
     </div>
     <div id="header-inner" class="inner">
@@ -80,7 +84,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/12/01/To-Remember/">To Remember</a>
+      <a class="article-title" href="/2018/12/01/To-Remember/">架設 HEXO BLOG</a>
     </h1>
   
 
@@ -96,13 +100,7 @@
 <li>注冊 GitHub 及新建一個 Repository (yourname.github.io)<br>一定要是(「你的帳號名」.github.io) </li>
 <li>安裝 HEXO</li>
 </ol>
-<h4 id="安裝-HEXO"><a href="#安裝-HEXO" class="headerlink" title="安裝 HEXO"></a>安裝 HEXO</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
-<p>建立一個與github page 同名的 hexo blog</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init yourname.github.io</span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> yourname.github.io</span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save   <span class="comment">#hexo 部屬工具</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># local 運行</span></span><br><span class="line">$ hexo s </span><br><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<h4 id="安裝-HEXO"><a href="#安裝-HEXO" class="headerlink" title="安裝 HEXO"></a>安裝 HEXO</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#安裝 hexo</span></span><br><span class="line">$ npm install hexo-cli -g</span><br><span class="line"></span><br><span class="line"><span class="comment">#建立一個與github page 同名的 hexo blog</span></span><br><span class="line">$ hexo init yourname.github.io</span><br><span class="line"></span><br><span class="line"><span class="comment"># 進入建立的folder</span></span><br><span class="line">$ <span class="built_in">cd</span> yourname.github.io</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安裝</span></span><br><span class="line">$ npm install</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安裝 hexo 部署工具</span></span><br><span class="line">$ npm install hexo-deployer-git --save   <span class="comment">#hexo 部屬工具</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># local 運行</span></span><br><span class="line">$ hexo s </span><br><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
 <p>生成 配置 ssh key</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C <span class="string">"youremail@email.com"</span></span><br></pre></td></tr></table></figure>
 <p>以記事本打開 c:\users\xxx\id_rsa.pub 並複製貼上到github <a href="https://github.com/settings/keys" target="_blank" rel="noopener">https://github.com/settings/keys</a></p>
@@ -114,56 +112,11 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://sophiagable.github.io/2018/12/01/To-Remember/" data-id="cjp5kpjac00016ci61zpolujn" class="article-share-link">Share</a>
+      <a data-url="http://sophiagable.github.io/2018/12/01/To-Remember/" data-id="cjp5kvwvc0001f4i6mnhn8d89" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo-gitHub/">hexo,gitHub</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/gitHub/">gitHub</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
 
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope="" itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/12/01/hello-world/" class="article-date">
-  <time datetime="2018-12-01T08:05:30.286Z" itemprop="datePublished">2018-12-01</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/12/01/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://sophiagable.github.io/2018/12/01/hello-world/" data-id="cjp5kpj9x00006ci68d2u5dey" class="article-share-link">Share</a>
-      
-      
     </footer>
   </div>
   
@@ -191,7 +144,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo-gitHub/">hexo,gitHub</a></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/gitHub/">gitHub</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
     </div>
   </div>
 
@@ -201,7 +154,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/hexo-gitHub/" style="font-size: 10px;">hexo,gitHub</a>
+      <a href="/tags/gitHub/" style="font-size: 10px;">gitHub</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a>
     </div>
   </div>
 
@@ -223,11 +176,7 @@
       <ul>
         
           <li>
-            <a href="/2018/12/01/To-Remember/">To Remember</a>
-          </li>
-        
-          <li>
-            <a href="/2018/12/01/hello-world/">Hello World</a>
+            <a href="/2018/12/01/To-Remember/">架設 HEXO BLOG</a>
           </li>
         
       </ul>
