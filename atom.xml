@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://sophiagable.github.io/"/>
-  <updated>2018-12-01T14:51:40.733Z</updated>
+  <updated>2018-12-11T15:56:12.563Z</updated>
   <id>http://sophiagable.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo-new</title>
+    <link href="http://sophiagable.github.io/2018/12/11/hexo-new/"/>
+    <id>http://sophiagable.github.io/2018/12/11/hexo-new/</id>
+    <published>2018-12-11T15:52:44.000Z</published>
+    <updated>2018-12-11T15:56:12.563Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="hexo-創建新文章"><a href="#hexo-創建新文章" class="headerlink" title="hexo 創建新文章"></a>hexo 創建新文章</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new [layout] &lt;title&gt;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;hexo-創建新文章&quot;&gt;&lt;a href=&quot;#hexo-創建新文章&quot; class=&quot;headerlink&quot; title=&quot;hexo 創建新文章&quot;&gt;&lt;/a&gt;hexo 創建新文章&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr
+      
+    
+    </summary>
+    
+      <category term="blog" scheme="http://sophiagable.github.io/categories/blog/"/>
+    
+    
+      <category term="hexo" scheme="http://sophiagable.github.io/tags/hexo/"/>
+    
+      <category term="gitHub" scheme="http://sophiagable.github.io/tags/gitHub/"/>
+    
+  </entry>
   
   <entry>
     <title>架設 HEXO BLOG</title>
