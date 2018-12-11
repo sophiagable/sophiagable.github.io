@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://sophiagable.github.io/"/>
-  <updated>2018-12-11T16:13:36.426Z</updated>
+  <updated>2018-12-11T16:17:33.158Z</updated>
   <id>http://sophiagable.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>hexo-new</title>
+    <title>hexo 創建新文章</title>
     <link href="http://sophiagable.github.io/2018/12/11/hexo-new/"/>
     <id>http://sophiagable.github.io/2018/12/11/hexo-new/</id>
     <published>2018-12-11T15:52:44.000Z</published>
-    <updated>2018-12-11T16:13:36.426Z</updated>
+    <updated>2018-12-11T16:17:33.158Z</updated>
     
     <content type="html"><![CDATA[<h3 id="hexo-創建新文章"><a href="#hexo-創建新文章" class="headerlink" title="hexo 創建新文章"></a>hexo 創建新文章</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new [layout] &lt;title&gt;</span><br></pre></td></tr></table></figure><p>剛剛看到不錯的theme,於是又去download 一個新的theme: next<br>要套用之前，先下指令：hexo clean<br>再到_config.yml 將 theme: next</p><p>接著用 hexo s –debug 測試是否正常</p>]]></content>
     
