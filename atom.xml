@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Sophia&#39;s Coding Life</title>
   
-  <subtitle>Record My Coding Life</subtitle>
+  <subtitle>A Frond-End Developer</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://sophiagable.github.io/"/>
-  <updated>2018-12-28T15:59:33.085Z</updated>
+  <updated>2019-03-22T17:19:36.775Z</updated>
   <id>http://sophiagable.github.io/</id>
   
   <author>
@@ -17,27 +17,16 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>book-GaryVee</title>
-    <link href="http://sophiagable.github.io/2018/12/28/book-GaryVee/"/>
-    <id>http://sophiagable.github.io/2018/12/28/book-GaryVee/</id>
-    <published>2018-12-28T15:32:12.000Z</published>
-    <updated>2018-12-28T15:59:33.085Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="我是GaryVee-網路大神的極致社群操作聖經-Gary-Vaynerchuk"><a href="#我是GaryVee-網路大神的極致社群操作聖經-Gary-Vaynerchuk" class="headerlink" title="我是GaryVee - 網路大神的極致社群操作聖經 / Gary Vaynerchuk"></a>我是GaryVee - 網路大神的極致社群操作聖經 / Gary Vaynerchuk</h3><ul><li>089</li></ul><p>不要因為在一個平台上待得太舒服了，就不花時間在別的平台上培養堅實的技術</p><h2 id="時間一久，冒險跳脫舒適圈的意願，將會成為你的救生圈"><a href="#時間一久，冒險跳脫舒適圈的意願，將會成為你的救生圈" class="headerlink" title="時間一久，冒險跳脫舒適圈的意願，將會成為你的救生圈"></a>時間一久，冒險跳脫舒適圈的意願，將會成為你的救生圈</h2>]]></content>
+    <title>9X9</title>
+    <link href="http://sophiagable.github.io/2019/03/23/9X9/"/>
+    <id>http://sophiagable.github.io/2019/03/23/9X9/</id>
+    <published>2019-03-22T17:19:36.000Z</published>
+    <updated>2019-03-22T17:19:36.775Z</updated>
     
     <summary type="html">
     
-      
-      
-        &lt;h3 id=&quot;我是GaryVee-網路大神的極致社群操作聖經-Gary-Vaynerchuk&quot;&gt;&lt;a href=&quot;#我是GaryVee-網路大神的極致社群操作聖經-Gary-Vaynerchuk&quot; class=&quot;headerlink&quot; title=&quot;我是GaryVee - 網路
-      
-    
     </summary>
     
-      <category term="books" scheme="http://sophiagable.github.io/categories/books/"/>
-    
-    
-      <category term="book" scheme="http://sophiagable.github.io/tags/book/"/>
     
   </entry>
   
