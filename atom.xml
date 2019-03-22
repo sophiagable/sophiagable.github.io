@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://sophiagable.github.io/"/>
-  <updated>2019-03-22T17:19:36.775Z</updated>
+  <updated>2019-03-22T18:41:17.673Z</updated>
   <id>http://sophiagable.github.io/</id>
   
   <author>
@@ -17,16 +17,31 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>9X9</title>
+    <title>JS地下城-1F-9X9</title>
     <link href="http://sophiagable.github.io/2019/03/23/9X9/"/>
     <id>http://sophiagable.github.io/2019/03/23/9X9/</id>
     <published>2019-03-22T17:19:36.000Z</published>
-    <updated>2019-03-22T17:19:36.775Z</updated>
+    <updated>2019-03-22T18:41:17.673Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="JS地下城-1F-9X9"><a href="#JS地下城-1F-9X9" class="headerlink" title="JS地下城-1F-9X9"></a>JS地下城-1F-9X9</h3><p>平常忙於工作上的專案，很少把自己寫的程式記錄下來，藉著六角學院的課程「JS地下城」來練練JS。</p><p>為了訓練自己，會希望同一個題目至少用二種以上的方式來撰寫，由於比較熟悉vuejs，至少希望每個題目，都用vuejs和純JS來撰寫。</p><ul><li><a href="https://codepen.io/skysophia/pen/EMOZOW" target="_blank" rel="noopener">9X9-VUEJS</a></li></ul><p>九九乘法表，以vuejs撰寫。用vuejs真的很快就完成程式的部份，應該10分寫完html和js。<br>在調css的部份花比較多的時間，我一邊用零碎的時間完成scss的部份。可能全部花1.5小時吧。<br>css仍是有用到一些bootstrape4 再微調。</p><ul><li><a href="https://codepen.io/skysophia/pen/EMOZOW" target="_blank" rel="noopener">9X9-JS</a></li></ul><p>以JS撰寫。因為工作上都用vuejs，很久沒有使用純JS，一時之間都有點忘了js如何寫，但我是用vuejs的方法去想，怎麼用vuejs的架構來改成js的寫法。</p><p>後來有上網找了一些網站，找到<a href="https://wcc723.github.io/javascript/2017/12/22/javascript-template-string/" target="_blank" rel="noopener">卡斯伯-JavaScript Template String 樣板字串</a>, 先照裏面的方法把樣版做好，再用loop產生出2~9的區塊。</p><p>以上就是此次練習的心路歷程。</p>]]></content>
     
     <summary type="html">
     
+      
+      
+        &lt;h3 id=&quot;JS地下城-1F-9X9&quot;&gt;&lt;a href=&quot;#JS地下城-1F-9X9&quot; class=&quot;headerlink&quot; title=&quot;JS地下城-1F-9X9&quot;&gt;&lt;/a&gt;JS地下城-1F-9X9&lt;/h3&gt;&lt;p&gt;平常忙於工作上的專案，很少把自己寫的程式記錄下來，藉著六角學
+      
+    
     </summary>
     
+      <category term="practice" scheme="http://sophiagable.github.io/categories/practice/"/>
+    
+    
+      <category term="Udemy" scheme="http://sophiagable.github.io/tags/Udemy/"/>
+    
+      <category term="六角學院" scheme="http://sophiagable.github.io/tags/%E5%85%AD%E8%A7%92%E5%AD%B8%E9%99%A2/"/>
+    
+      <category term="Javascript" scheme="http://sophiagable.github.io/tags/Javascript/"/>
     
   </entry>
   
