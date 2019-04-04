@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://sophiagable.github.io/"/>
-  <updated>2019-03-26T12:57:39.011Z</updated>
+  <updated>2019-04-04T14:28:05.422Z</updated>
   <id>http://sophiagable.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo 指令</title>
+    <link href="http://sophiagable.github.io/2019/04/04/hexoCommands/"/>
+    <id>http://sophiagable.github.io/2019/04/04/hexoCommands/</id>
+    <published>2019-04-04T11:16:03.000Z</published>
+    <updated>2019-04-04T14:28:05.422Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="hexo-指令整理"><a href="#hexo-指令整理" class="headerlink" title="hexo 指令整理"></a>hexo 指令整理</h1><blockquote><p>常用的指令→ 寫完文章，hexo clean, hexo g , hexo d</p></blockquote><table><thead><tr><th>指令</th><th style="text-align:left">說明 </th></tr></thead><tbody><tr><td>hexo init [folder]</td><td style="text-align:left">建立一個新的網站</td></tr><tr><td>hexo generate</td><td style="text-align:left">產生靜態檔案, hexo g 也可</td></tr><tr><td>hexo deploy</td><td style="text-align:left">部署網站，就是生成網站了</td></tr><tr><td>hexo deploy -g</td><td style="text-align:left">部署前先生成靜態擋案</td></tr><tr><td>hexo clean</td><td style="text-align:left">清除快取檔案 (db.json) 和已產生的靜態檔案 (public)。</td></tr><tr><td>hexo –debug</td><td style="text-align:left">在終端機中顯示除錯訊息並儲存記錄檔到 debug.log。當您碰到問題時，試著以除錯模式重新執行一次，並 把除錯訊息貼到 GitHub。</td></tr><tr><td>hexo –draft</td><td style="text-align:left">顯示草稿 </td></tr></tbody></table><h1 id="hexo-文章的asset資料夾"><a href="#hexo-文章的asset資料夾" class="headerlink" title="hexo 文章的asset資料夾"></a>hexo 文章的asset資料夾</h1><ol><li>首先必須先在 _config.yml 中設定「post_asset_folder為true</li></ol><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">post_asset_folder: <span class="literal">true</span></span><br></pre></td></tr></table></figure><ol start="2"><li><p>以上設定完之後，建立新文章會自動生出與新文章相同名稱之資料夾<br>※ 為了避免錯誤，建立的文章會以英文為主。</p></li><li><p>引用圖片(assets)的方式：</p></li></ol><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;% asset_path slug %&#125;</span><br><span class="line">&#123;% asset_img slug [title] %&#125;</span><br><span class="line">&#123;% asset_link slug [title] %&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment"># example</span></span><br><span class="line">&#123;% asset_img hexo_index.png hexoWebsite %&#125;</span><br></pre></td></tr></table></figure><img src="/2019/04/04/hexoCommands/hexo_index.png" title="hexo網站">]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;hexo-指令整理&quot;&gt;&lt;a href=&quot;#hexo-指令整理&quot; class=&quot;headerlink&quot; title=&quot;hexo 指令整理&quot;&gt;&lt;/a&gt;hexo 指令整理&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;常用的指令→ 寫完文章，hexo clean, hexo 
+      
+    
+    </summary>
+    
+      <category term="hexo" scheme="http://sophiagable.github.io/categories/hexo/"/>
+    
+    
+      <category term="hexo" scheme="http://sophiagable.github.io/tags/hexo/"/>
+    
+  </entry>
   
   <entry>
     <title>JS地下城-2F-Clock</title>
@@ -53,9 +79,9 @@
     <link href="http://sophiagable.github.io/2019/03/23/9X9/"/>
     <id>http://sophiagable.github.io/2019/03/23/9X9/</id>
     <published>2019-03-22T17:19:36.000Z</published>
-    <updated>2019-03-26T13:06:57.247Z</updated>
+    <updated>2019-04-04T14:26:18.817Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="JS地下城-1F-9X9"><a href="#JS地下城-1F-9X9" class="headerlink" title="JS地下城-1F-9X9"></a>JS地下城-1F-9X9</h3><p>平常忙於工作上的專案，很少把自己寫的程式記錄下來，藉著六角學院的課程「JS地下城」來練練JS。</p><p>為了訓練自己，會希望同一個題目至少用二種以上的方式來撰寫，由於比較熟悉vuejs，至少希望每個題目，都用vuejs和純JS來撰寫。</p><ul><li><a href="https://codepen.io/skysophia/pen/GeXdXq" target="_blank" rel="noopener">9X9-VUEJS</a></li></ul><p>九九乘法表，以vuejs撰寫。用vuejs真的很快就完成程式的部份，應該10分寫完html和js。<br>js的部份因為用vue，所以v-for都寫在html即可，乘法也直接寫在html裏。</p><p>在調css的部份花比較多的時間，我一邊用零碎的時間完成scss的部份。可能全部花1.5小時吧。<br>css仍是有用到一些bootstrape4 再微調。</p><ul><li><a href="https://codepen.io/skysophia/pen/EMOZOW" target="_blank" rel="noopener">9X9-JS</a></li></ul><p>以JS撰寫。因為工作上都用vuejs，很久沒有使用純JS，一時之間都有點忘了js如何寫，但我是用vuejs的方法去想，怎麼用vuejs的架構來改成js的寫法。</p><p>後來有上網找了一些網站，找到<a href="https://wcc723.github.io/javascript/2017/12/22/javascript-template-string/" target="_blank" rel="noopener">卡斯伯-JavaScript Template String 樣板字串</a>, 先照裏面的方法把樣版做好，再用loop產生出2~9的區塊。</p><p>以上就是此次練習的心路歷程。</p>]]></content>
+    <content type="html"><![CDATA[<h3 id="JS地下城-1F-9X9"><a href="#JS地下城-1F-9X9" class="headerlink" title="JS地下城-1F-9X9"></a>JS地下城-1F-9X9</h3><p>平常忙於工作上的專案，很少把自己寫的程式記錄下來，藉著六角學院的課程「JS地下城」來練練JS。</p><p>為了訓練自己，會希望同一個題目至少用二種以上的方式來撰寫，由於比較熟悉vuejs，至少希望每個題目，都用vuejs和純JS來撰寫。</p><ul><li><a href="https://codepen.io/skysophia/pen/GeXdXq" target="_blank" rel="noopener">9X9-VUEJS</a></li></ul><p>九九乘法表，以vuejs撰寫。用vuejs真的很快就完成程式的部份，應該10分寫完html和js。<br>js的部份因為用vue，所以v-for都寫在html即可，乘法也直接寫在html裏。</p><p>在調css的部份花比較多的時間，我一邊用零碎的時間完成scss的部份。可能全部花1.5小時吧。<br>css仍是有用到一些bootstrape4 再微調。</p><ul><li><a href="https://codepen.io/skysophia/pen/EMOZOW" target="_blank" rel="noopener">9X9-JS</a></li></ul><p>以JS撰寫。因為工作上都用vuejs，很久沒有使用純JS，一時之間都有點忘了js如何寫，但我是用vuejs的方法去想，怎麼用vuejs的架構來改成js的寫法。</p><p>後來有上網找了一些網站，找到<a href="https://wcc723.github.io/javascript/2017/12/22/javascript-template-string/" target="_blank" rel="noopener">卡斯伯-JavaScript Template String 樣板字串</a>, 先照裏面的方法把樣版做好，再用loop產生出2~9的區塊。</p><p>以上就是此次練習的心路歷程。</p><img src="/2019/03/23/9X9/9X9.png" title="9X9">]]></content>
     
     <summary type="html">
     
@@ -98,9 +124,9 @@
       <category term="git" scheme="http://sophiagable.github.io/categories/git/"/>
     
     
-      <category term="gitHub" scheme="http://sophiagable.github.io/tags/gitHub/"/>
-    
       <category term="git" scheme="http://sophiagable.github.io/tags/git/"/>
+    
+      <category term="gitHub" scheme="http://sophiagable.github.io/tags/gitHub/"/>
     
   </entry>
   
@@ -125,9 +151,9 @@
       <category term="hexo" scheme="http://sophiagable.github.io/categories/hexo/"/>
     
     
-      <category term="hexo" scheme="http://sophiagable.github.io/tags/hexo/"/>
-    
       <category term="gitHub" scheme="http://sophiagable.github.io/tags/gitHub/"/>
+    
+      <category term="hexo" scheme="http://sophiagable.github.io/tags/hexo/"/>
     
   </entry>
   
@@ -136,7 +162,7 @@
     <link href="http://sophiagable.github.io/2018/12/01/To-Remember/"/>
     <id>http://sophiagable.github.io/2018/12/01/To-Remember/</id>
     <published>2018-12-01T13:58:07.000Z</published>
-    <updated>2018-12-11T16:26:18.066Z</updated>
+    <updated>2019-04-04T11:14:52.043Z</updated>
     
     <content type="html"><![CDATA[<p>好久好久沒寫blog了。<br>這次又開了一個blog的原因是，想紀錄自己coding的學習紀錄。</p><p>首頁先把架設HEXO+Github page的過程紀錄下來吧。</p><h4 id="Hexo-Github-page"><a href="#Hexo-Github-page" class="headerlink" title="Hexo + Github page"></a>Hexo + Github page</h4><h5 id="Node-JS-Hexo-gitHub"><a href="#Node-JS-Hexo-gitHub" class="headerlink" title="Node JS,Hexo,gitHub"></a>Node JS,Hexo,gitHub</h5><ol><li>Node js 安裝 → <a href="https://nodejs.org/zh-cn/download/" target="_blank" rel="noopener">NodeJs</a></li><li>安裝 <a href="https://git-scm.com/" target="_blank" rel="noopener">Git</a></li><li>注冊 GitHub 及新建一個 Repository (yourname.github.io)<br>一定要是(「你的帳號名」.github.io) </li><li>安裝 HEXO</li></ol><h5 id="安裝-HEXO"><a href="#安裝-HEXO" class="headerlink" title="安裝 HEXO"></a>安裝 HEXO</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#安裝 hexo</span></span><br><span class="line">$ npm install hexo-cli -g</span><br><span class="line"></span><br><span class="line"><span class="comment">#建立一個與github page 同名的 hexo blog</span></span><br><span class="line">$ hexo init yourname.github.io</span><br><span class="line"></span><br><span class="line"><span class="comment"># 進入建立的folder</span></span><br><span class="line">$ <span class="built_in">cd</span> yourname.github.io</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安裝</span></span><br><span class="line">$ npm install</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安裝 hexo 部署工具</span></span><br><span class="line">$ npm install hexo-deployer-git --save   <span class="comment">#hexo 部屬工具</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># local 運行</span></span><br><span class="line">$ hexo s </span><br><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>生成 配置 ssh key</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C <span class="string">"youremail@email.com"</span></span><br></pre></td></tr></table></figure><p>以記事本打開 c:\users\xxx\id_rsa.pub 並複製貼上到github <a href="https://github.com/settings/keys" target="_blank" rel="noopener">https://github.com/settings/keys</a></p><h5 id="設定個人資料"><a href="#設定個人資料" class="headerlink" title="設定個人資料"></a>設定個人資料</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name <span class="string">"yourUserName"</span></span><br><span class="line">git config --global user.email <span class="string">"your@email.com"</span></span><br></pre></td></tr></table></figure><h5 id="配置-config-yml-文件"><a href="#配置-config-yml-文件" class="headerlink" title="配置 _config.yml 文件"></a>配置 _config.yml 文件</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/deployment.html</span></span><br><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repo: git@github.com:yourname/yourname.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure><h5 id="提交文件至-Github-Page"><a href="#提交文件至-Github-Page" class="headerlink" title="提交文件至 Github Page"></a>提交文件至 Github Page</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#本地預覽</span></span><br><span class="line"><span class="variable">$hexo</span> s</span><br><span class="line"></span><br><span class="line"><span class="comment">#刪除old靜態文件</span></span><br><span class="line"><span class="variable">$hexo</span> clean</span><br><span class="line"></span><br><span class="line"><span class="comment">#產生新的文件</span></span><br><span class="line"><span class="variable">$hexo</span> g</span><br><span class="line"></span><br><span class="line"><span class="comment">#部署到網站</span></span><br><span class="line"><span class="variable">$hexo</span> d</span><br><span class="line"></span><br><span class="line"><span class="comment">#組合命令</span></span><br><span class="line"><span class="variable">$hexo</span> d -g</span><br></pre></td></tr></table></figure><p>到 <strong>yourname.github.io</strong> 看到你的網站就成功啦!!!!</p>]]></content>
     
@@ -151,12 +177,12 @@
     
     </summary>
     
-      <category term="blog" scheme="http://sophiagable.github.io/categories/blog/"/>
+      <category term="hexo" scheme="http://sophiagable.github.io/categories/hexo/"/>
     
-    
-      <category term="hexo" scheme="http://sophiagable.github.io/tags/hexo/"/>
     
       <category term="gitHub" scheme="http://sophiagable.github.io/tags/gitHub/"/>
+    
+      <category term="hexo" scheme="http://sophiagable.github.io/tags/hexo/"/>
     
   </entry>
   

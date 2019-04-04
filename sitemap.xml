@@ -2,23 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://sophiagable.github.io/2018/12/11/hexo-new/</loc>
+    <loc>http://sophiagable.github.io/2019/04/04/hexoCommands/</loc>
     
-    <lastmod>2019-04-04T10:38:06.021Z</lastmod>
+    <lastmod>2019-04-04T14:28:05.422Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://sophiagable.github.io/about/index.html</loc>
     
-    <lastmod>2019-04-04T05:31:57.361Z</lastmod>
+    <lastmod>2019-04-04T14:26:53.993Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://sophiagable.github.io/2019/03/23/9X9/</loc>
     
-    <lastmod>2019-03-26T13:06:57.247Z</lastmod>
+    <lastmod>2019-04-04T14:26:18.817Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://sophiagable.github.io/2018/12/01/To-Remember/</loc>
+    
+    <lastmod>2019-04-04T11:14:52.043Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://sophiagable.github.io/2018/12/11/hexo-new/</loc>
+    
+    <lastmod>2019-04-04T10:38:06.021Z</lastmod>
     
   </url>
   
@@ -47,13 +61,6 @@
     <loc>http://sophiagable.github.io/categories/index.html</loc>
     
     <lastmod>2018-12-13T14:57:52.392Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://sophiagable.github.io/2018/12/01/To-Remember/</loc>
-    
-    <lastmod>2018-12-11T16:26:18.066Z</lastmod>
     
   </url>
   
