@@ -98,9 +98,9 @@
       <category term="git" scheme="http://sophiagable.github.io/categories/git/"/>
     
     
-      <category term="git" scheme="http://sophiagable.github.io/tags/git/"/>
-    
       <category term="gitHub" scheme="http://sophiagable.github.io/tags/gitHub/"/>
+    
+      <category term="git" scheme="http://sophiagable.github.io/tags/git/"/>
     
   </entry>
   
@@ -109,9 +109,9 @@
     <link href="http://sophiagable.github.io/2018/12/11/hexo-new/"/>
     <id>http://sophiagable.github.io/2018/12/11/hexo-new/</id>
     <published>2018-12-11T15:52:44.000Z</published>
-    <updated>2018-12-21T15:13:36.443Z</updated>
+    <updated>2019-04-04T10:38:06.021Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="hexo-創建新文章"><a href="#hexo-創建新文章" class="headerlink" title="hexo 創建新文章"></a>hexo 創建新文章</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new [layout] &lt;title&gt;</span><br></pre></td></tr></table></figure><p>剛剛看到不錯的theme,於是又去download 一個新的theme: <a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="noopener">next</a><br>要套用之前，先下指令：hexo clean<br>再到_config.yml 將 theme: next</p><p>接著用 hexo s –debug 測試是否正常</p><h3 id="新增-tag-categorys-頁面"><a href="#新增-tag-categorys-頁面" class="headerlink" title="新增 tag / categorys 頁面"></a>新增 tag / categorys 頁面</h3><p>首頁新增 tags / categories 頁面</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new page <span class="string">"tags"</span> <span class="comment"># "categories"</span></span><br></pre></td></tr></table></figure><p>在/source/tags/index.md 設置以下資料</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">title: All Tags <span class="comment"># All Categories</span></span><br><span class="line">date: 2018-12-13 22:53:39</span><br><span class="line"><span class="built_in">type</span>: <span class="string">"tags"</span> <span class="comment"># "categories"</span></span><br></pre></td></tr></table></figure><p>添加 tags/ categories 到主题配置文件 _config.yml 裡</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">tags: /tags/ || tags</span><br><span class="line">categories: /categories/ || th</span><br></pre></td></tr></table></figure><p>選擇next 風格的配置，只要在 theme/next/_config.yml 中找 Scheme ,將想要的配置前的#號拿掉即可</p><ul><li></li></ul>]]></content>
+    <content type="html"><![CDATA[<h3 id="hexo-創建新文章"><a href="#hexo-創建新文章" class="headerlink" title="hexo 創建新文章"></a>hexo 創建新文章</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new [layout] &lt;title&gt;</span><br></pre></td></tr></table></figure><p>剛剛看到不錯的theme,於是又去download 一個新的theme: <a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="noopener">next</a><br>要套用之前，先下指令：hexo clean<br>再到_config.yml 將 theme: next</p><p>接著用 hexo s –debug 測試是否正常</p><h3 id="新增-tag-categorys-頁面"><a href="#新增-tag-categorys-頁面" class="headerlink" title="新增 tag / categorys 頁面"></a>新增 tag / categorys 頁面</h3><p>首頁新增 tags / categories 頁面</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new page <span class="string">"tags"</span> <span class="comment"># "categories"</span></span><br></pre></td></tr></table></figure><p>在/source/tags/index.md 設置以下資料</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">title: All Tags <span class="comment"># All Categories</span></span><br><span class="line">date: 2018-12-13 22:53:39</span><br><span class="line"><span class="built_in">type</span>: <span class="string">"tags"</span> <span class="comment"># "categories"</span></span><br></pre></td></tr></table></figure><p>添加 tags/ categories 到主题配置文件 _config.yml 裡</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">tags: /tags/ || tags</span><br><span class="line">categories: /categories/ || th</span><br></pre></td></tr></table></figure><p>選擇next 風格的配置，只要在 theme/next/_config.yml 中找 Scheme ,將想要的配置前的#號拿掉即可</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment"># Schemes</span></span><br><span class="line"><span class="comment">#scheme: Muse</span></span><br><span class="line"><span class="comment">#scheme: Mist</span></span><br><span class="line">scheme: Pisces</span><br><span class="line"><span class="comment">#scheme: Gemini</span></span><br></pre></td></tr></table></figure><blockquote><p>找個時間把hexo指令整理一下</p></blockquote>]]></content>
     
     <summary type="html">
     
@@ -122,12 +122,12 @@
     
     </summary>
     
-      <category term="blog" scheme="http://sophiagable.github.io/categories/blog/"/>
+      <category term="hexo" scheme="http://sophiagable.github.io/categories/hexo/"/>
     
-    
-      <category term="gitHub" scheme="http://sophiagable.github.io/tags/gitHub/"/>
     
       <category term="hexo" scheme="http://sophiagable.github.io/tags/hexo/"/>
+    
+      <category term="gitHub" scheme="http://sophiagable.github.io/tags/gitHub/"/>
     
   </entry>
   
@@ -154,9 +154,9 @@
       <category term="blog" scheme="http://sophiagable.github.io/categories/blog/"/>
     
     
-      <category term="gitHub" scheme="http://sophiagable.github.io/tags/gitHub/"/>
-    
       <category term="hexo" scheme="http://sophiagable.github.io/tags/hexo/"/>
+    
+      <category term="gitHub" scheme="http://sophiagable.github.io/tags/gitHub/"/>
     
   </entry>
   
