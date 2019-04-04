@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://sophiagable.github.io/"/>
-  <updated>2019-04-04T14:28:05.422Z</updated>
+  <updated>2019-04-04T14:42:09.089Z</updated>
   <id>http://sophiagable.github.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://sophiagable.github.io/2019/04/04/hexoCommands/"/>
     <id>http://sophiagable.github.io/2019/04/04/hexoCommands/</id>
     <published>2019-04-04T11:16:03.000Z</published>
-    <updated>2019-04-04T14:28:05.422Z</updated>
+    <updated>2019-04-04T14:42:09.089Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="hexo-指令整理"><a href="#hexo-指令整理" class="headerlink" title="hexo 指令整理"></a>hexo 指令整理</h1><blockquote><p>常用的指令→ 寫完文章，hexo clean, hexo g , hexo d</p></blockquote><table><thead><tr><th>指令</th><th style="text-align:left">說明 </th></tr></thead><tbody><tr><td>hexo init [folder]</td><td style="text-align:left">建立一個新的網站</td></tr><tr><td>hexo generate</td><td style="text-align:left">產生靜態檔案, hexo g 也可</td></tr><tr><td>hexo deploy</td><td style="text-align:left">部署網站，就是生成網站了</td></tr><tr><td>hexo deploy -g</td><td style="text-align:left">部署前先生成靜態擋案</td></tr><tr><td>hexo clean</td><td style="text-align:left">清除快取檔案 (db.json) 和已產生的靜態檔案 (public)。</td></tr><tr><td>hexo –debug</td><td style="text-align:left">在終端機中顯示除錯訊息並儲存記錄檔到 debug.log。當您碰到問題時，試著以除錯模式重新執行一次，並 把除錯訊息貼到 GitHub。</td></tr><tr><td>hexo –draft</td><td style="text-align:left">顯示草稿 </td></tr></tbody></table><h1 id="hexo-文章的asset資料夾"><a href="#hexo-文章的asset資料夾" class="headerlink" title="hexo 文章的asset資料夾"></a>hexo 文章的asset資料夾</h1><ol><li>首先必須先在 _config.yml 中設定「post_asset_folder為true</li></ol><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">post_asset_folder: <span class="literal">true</span></span><br></pre></td></tr></table></figure><ol start="2"><li><p>以上設定完之後，建立新文章會自動生出與新文章相同名稱之資料夾<br>※ 為了避免錯誤，建立的文章會以英文為主。</p></li><li><p>引用圖片(assets)的方式：</p></li></ol><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;% asset_path slug %&#125;</span><br><span class="line">&#123;% asset_img slug [title] %&#125;</span><br><span class="line">&#123;% asset_link slug [title] %&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment"># example</span></span><br><span class="line">&#123;% asset_img hexo_index.png hexoWebsite %&#125;</span><br></pre></td></tr></table></figure><img src="/2019/04/04/hexoCommands/hexo_index.png" title="hexo網站">]]></content>
+    <content type="html"><![CDATA[<h1 id="hexo-指令整理"><a href="#hexo-指令整理" class="headerlink" title="hexo 指令整理"></a>hexo 指令整理</h1><blockquote><p>常用的指令→ 寫完文章，hexo clean, hexo g , hexo d</p></blockquote><table><thead><tr><th>指令</th><th style="text-align:left">說明 </th></tr></thead><tbody><tr><td>hexo init [folder]</td><td style="text-align:left">建立一個新的網站</td></tr><tr><td>hexo new [name] [title]</td><td style="text-align:left">創建新文章</td></tr><tr><td>hexo generate</td><td style="text-align:left">產生靜態檔案, hexo g 也可</td></tr><tr><td>hexo deploy</td><td style="text-align:left">部署網站，就是生成網站了</td></tr><tr><td>hexo deploy -g</td><td style="text-align:left">部署前先生成靜態擋案</td></tr><tr><td>hexo clean</td><td style="text-align:left">清除快取檔案 (db.json) 和已產生的靜態檔案 (public)。</td></tr><tr><td>hexo –debug</td><td style="text-align:left">在終端機中顯示除錯訊息並儲存記錄檔到 debug.log。當您碰到問題時，試著以除錯模式重新執行一次，並 把除錯訊息貼到 GitHub。</td></tr><tr><td>hexo –draft</td><td style="text-align:left">顯示草稿 </td></tr></tbody></table><h1 id="hexo-文章的asset資料夾"><a href="#hexo-文章的asset資料夾" class="headerlink" title="hexo 文章的asset資料夾"></a>hexo 文章的asset資料夾</h1><ol><li>首先必須先在 _config.yml 中設定「post_asset_folder」為true</li></ol><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">post_asset_folder: <span class="literal">true</span></span><br></pre></td></tr></table></figure><ol start="2"><li><p>以上設定完之後，建立新文章會自動生出與新文章相同名稱之資料夾<br>※ 為了避免錯誤，建立的文章會以英文為主。</p></li><li><p>引用圖片(assets)的方式：</p></li></ol><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#123;% asset_path slug %&#125;</span><br><span class="line">&#123;% asset_img slug [title] %&#125;</span><br><span class="line">&#123;% asset_link slug [title] %&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment"># example 以下的code會在下方出現圖</span></span><br><span class="line">&#123;% asset_img hexo_index.png hexoWebsite %&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment"># &#123;%asset_img [圖檔名.副檔名] [圖檔說明文字]%&#125;</span></span><br></pre></td></tr></table></figure><img src="/2019/04/04/hexoCommands/hexo_index.png" title="hexo網站">]]></content>
     
     <summary type="html">
     
@@ -124,9 +124,9 @@
       <category term="git" scheme="http://sophiagable.github.io/categories/git/"/>
     
     
-      <category term="git" scheme="http://sophiagable.github.io/tags/git/"/>
-    
       <category term="gitHub" scheme="http://sophiagable.github.io/tags/gitHub/"/>
+    
+      <category term="git" scheme="http://sophiagable.github.io/tags/git/"/>
     
   </entry>
   
@@ -151,9 +151,9 @@
       <category term="hexo" scheme="http://sophiagable.github.io/categories/hexo/"/>
     
     
-      <category term="gitHub" scheme="http://sophiagable.github.io/tags/gitHub/"/>
-    
       <category term="hexo" scheme="http://sophiagable.github.io/tags/hexo/"/>
+    
+      <category term="gitHub" scheme="http://sophiagable.github.io/tags/gitHub/"/>
     
   </entry>
   
@@ -180,9 +180,9 @@
       <category term="hexo" scheme="http://sophiagable.github.io/categories/hexo/"/>
     
     
-      <category term="gitHub" scheme="http://sophiagable.github.io/tags/gitHub/"/>
-    
       <category term="hexo" scheme="http://sophiagable.github.io/tags/hexo/"/>
+    
+      <category term="gitHub" scheme="http://sophiagable.github.io/tags/gitHub/"/>
     
   </entry>
   

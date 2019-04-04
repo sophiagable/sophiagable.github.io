@@ -81,19 +81,19 @@
 
 
 
-<meta name="description" content="hexo 指令整理 常用的指令→ 寫完文章，hexo clean, hexo g , hexo d     指令 說明      hexo init [folder] 建立一個新的網站   hexo generate 產生靜態檔案, hexo g 也可   hexo deploy 部署網站，就是生成網站了   hexo deploy -g 部署前先生成靜態擋案   hexo clean 清除快取檔">
+<meta name="description" content="hexo 指令整理 常用的指令→ 寫完文章，hexo clean, hexo g , hexo d     指令 說明      hexo init [folder] 建立一個新的網站   hexo new [name] [title] 創建新文章   hexo generate 產生靜態檔案, hexo g 也可   hexo deploy 部署網站，就是生成網站了   hexo deploy">
 <meta name="keywords" content="hexo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo 指令">
 <meta property="og:url" content="http://sophiagable.github.io/2019/04/04/hexoCommands/index.html">
 <meta property="og:site_name" content="Sophia&#39;s Coding Life">
-<meta property="og:description" content="hexo 指令整理 常用的指令→ 寫完文章，hexo clean, hexo g , hexo d     指令 說明      hexo init [folder] 建立一個新的網站   hexo generate 產生靜態檔案, hexo g 也可   hexo deploy 部署網站，就是生成網站了   hexo deploy -g 部署前先生成靜態擋案   hexo clean 清除快取檔">
+<meta property="og:description" content="hexo 指令整理 常用的指令→ 寫完文章，hexo clean, hexo g , hexo d     指令 說明      hexo init [folder] 建立一個新的網站   hexo new [name] [title] 創建新文章   hexo generate 產生靜態檔案, hexo g 也可   hexo deploy 部署網站，就是生成網站了   hexo deploy">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="http://sophiagable.github.io/2019/04/04/hexoCommands/hexo_index.png">
-<meta property="og:updated_time" content="2019-04-04T14:28:05.422Z">
+<meta property="og:updated_time" content="2019-04-04T14:42:09.089Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo 指令">
-<meta name="twitter:description" content="hexo 指令整理 常用的指令→ 寫完文章，hexo clean, hexo g , hexo d     指令 說明      hexo init [folder] 建立一個新的網站   hexo generate 產生靜態檔案, hexo g 也可   hexo deploy 部署網站，就是生成網站了   hexo deploy -g 部署前先生成靜態擋案   hexo clean 清除快取檔">
+<meta name="twitter:description" content="hexo 指令整理 常用的指令→ 寫完文章，hexo clean, hexo g , hexo d     指令 說明      hexo init [folder] 建立一個新的網站   hexo new [name] [title] 創建新文章   hexo generate 產生靜態檔案, hexo g 也可   hexo deploy 部署網站，就是生成網站了   hexo deploy">
 <meta name="twitter:image" content="http://sophiagable.github.io/2019/04/04/hexoCommands/hexo_index.png">
 
 
@@ -381,6 +381,10 @@
 <td style="text-align:left">建立一個新的網站</td>
 </tr>
 <tr>
+<td>hexo new [name] [title]</td>
+<td style="text-align:left">創建新文章</td>
+</tr>
+<tr>
 <td>hexo generate</td>
 <td style="text-align:left">產生靜態檔案, hexo g 也可</td>
 </tr>
@@ -407,7 +411,7 @@
 </tbody>
 </table>
 <h1 id="hexo-文章的asset資料夾"><a href="#hexo-文章的asset資料夾" class="headerlink" title="hexo 文章的asset資料夾"></a>hexo 文章的asset資料夾</h1><ol>
-<li>首先必須先在 _config.yml 中設定「post_asset_folder為true</li>
+<li>首先必須先在 _config.yml 中設定「post_asset_folder」為true</li>
 </ol>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">post_asset_folder: <span class="literal">true</span></span><br></pre></td></tr></table></figure>
 <ol start="2">
@@ -416,7 +420,7 @@
 <li><p>引用圖片(assets)的方式：</p>
 </li>
 </ol>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;% asset_path slug %&#125;</span><br><span class="line">&#123;% asset_img slug [title] %&#125;</span><br><span class="line">&#123;% asset_link slug [title] %&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment"># example</span></span><br><span class="line">&#123;% asset_img hexo_index.png hexoWebsite %&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#123;% asset_path slug %&#125;</span><br><span class="line">&#123;% asset_img slug [title] %&#125;</span><br><span class="line">&#123;% asset_link slug [title] %&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment"># example 以下的code會在下方出現圖</span></span><br><span class="line">&#123;% asset_img hexo_index.png hexoWebsite %&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment"># &#123;%asset_img [圖檔名.副檔名] [圖檔說明文字]%&#125;</span></span><br></pre></td></tr></table></figure>
 <img src="/2019/04/04/hexoCommands/hexo_index.png" title="hexo網站">
       
     </div>
